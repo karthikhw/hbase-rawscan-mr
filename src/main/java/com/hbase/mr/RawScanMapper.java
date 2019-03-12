@@ -34,7 +34,7 @@ public class RawScanMapper extends TableMapper<Text, Text>{
 			}
 		}
 		if(count > 0) {
-			context.write(new Text(key),new Text(String.valueOf(count-1)));
+			context.write(new Text(key),new Text(String.valueOf(count)));
 		}
 	}
 }
