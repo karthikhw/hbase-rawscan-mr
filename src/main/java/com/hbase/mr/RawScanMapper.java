@@ -33,7 +33,7 @@ public class RawScanMapper extends TableMapper<Text, Text>{
 				cellkvs.add(key);
 			}
 		}
-		if(count >0) {
+		if(count > 0) {
 			context.write(new Text(key),new Text(String.valueOf(count-1)));
 		}
 	}
